@@ -1,0 +1,45 @@
+.exercise{
+    max-width: 900px;
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: #2e52c7;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-header h2{
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.task{
+    background: #f8f9fa;
+    border-left: 5px solid #2e52c7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.task ul{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.task li{
+    margin-bottom: 8px;
+}
+
+.box{
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
