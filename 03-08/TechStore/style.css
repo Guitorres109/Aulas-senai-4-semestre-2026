@@ -1,0 +1,87 @@
+main {
+    padding: 20px;
+}
+
+.content-hero {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-produtos {
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    transition: .3s;
+    border: none;
+    border-radius: 16px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.2);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: contain;
+    background: #f8f9fa;
+}
+
+.card-title {
+    font-size: 1rem;
+    height: 50px;
+    overflow: hidden;
+}
+
+.card-text {
+    height: 70px;
+    overflow: hidden;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.tabela-produtos {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.tabela-produtos table {
+    margin: 0;
+}
+
+.produto-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .produto-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .table {
+        font-size: .9rem;
+    }
+}

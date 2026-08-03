@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tech Store</title>
+</head>
+<body class="bg-dark">
+    <header>
+        <div class="content-hero container-fluid bg-dark text-light">
+            <h1>Tech Store</h1>
+            <p>Projeto utilizando containers com Bootstrap e consumindo uma API de produtos</p>
+        </div>
+    </header>
+    <main class="text-center">
+        <div class="container">
+            <div class="container-produtos row g-4"></div>
+        </div>
+        <h2 class="text-light">Tabela de Produtos</h2>
+        <div class="container my-5">
+            <div class="tabela-produtos table-responsive"></div>
+        </div>
+        <div class="services container-lg bg-secondary-subtle border border-secondary border-2 rounded-4 shadow p-4 mb-5">
+    <h2 class="text-center mb-4">Nossos Serviços</h2>
+
+    <div class="row g-3">
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="alert alert-secondary text-center h-100 mb-0">
+                🖥️ <br>
+                <strong>Montagem de PCs</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="alert alert-secondary text-center h-100 mb-0">
+                🔧 <br>
+                <strong>Assistência Técnica</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="alert alert-secondary text-center h-100 mb-0">
+                📦 <br>
+                <strong>Entrega</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="alert alert-secondary text-center h-100 mb-0">
+                ☁️ <br>
+                <strong>Backup em Nuvem</strong>
+            </div>
+        </div>
+
+            </div>
+        </div>
+        <section class="container-lg my-5">
+            <div class="bg-secondary-subtle rounded-4 shadow p-4 p-md-5">
+
+                <h2 class="mb-3">Fale Conosco</h2>
+
+                <form>
+
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">
+                            Nome
+                        </label>
+                        <input 
+                            type="text" 
+                            class="form-control"
+                            id="nome"
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            E-mail
+                        </label>
+                        <input 
+                            type="email" 
+                            class="form-control"
+                            id="email"
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">
+                            Mensagem
+                        </label>
+
+                        <textarea 
+                            class="form-control"
+                            id="mensagem"
+                            rows="5">
+                        </textarea>
+                    </div>
+
+                    <button class="btn btn-secondary">
+                        Enviar
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+        <footer class="bg-dark text-light rounded-top-4 shadow mt-5">
+
+            <div class="container-lg py-5">
+
+                <h2 class="fw-bold">
+                    Tech Store
+                </h2>
+
+                <p>
+                    Projeto desenvolvido utilizando Bootstrap 5.
+                </p>
+
+                <div class="bg-light text-secondary rounded-3 p-3">
+                    Este rodapé utiliza .container-xl ideal para telas muito grandes.
+                </div>
+
+            </div>
+
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

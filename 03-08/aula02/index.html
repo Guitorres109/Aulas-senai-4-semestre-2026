@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body class="bg-light">
+    <div class="text-center py-5">
+        <h1 class="display-4 ">🎁 Conhecendo os Containers do Bootstrap</h1>
+        <p class="lead">Redimensione a janela do navegador para observar o comportamento de cada container</p>
+
+    </div>
+    <div class="container bg-success-subtle border border-success border-5 rounded-4 shadow-4 shadow-lg p-4 mb-5">
+        <h2 class="text-success">📦 .container</h2>
+        <p class="fs-4 fw-bold">Sou o container mais utilizado</p>
+        <p>Imagine uma Mochila. Ela cresce até um limite e depois para. Mesmo em uma tela enorme ela permanece organizada.</p>
+        <div class="alert alert-success"><strong>Explicando as classes</strong><br>
+            Container = cria o responsivo. <br>
+            bg-success-subtle = fundo verde claro. <br>
+            border = adiciona borda <br>
+            border-5 = borda grossa <br>
+            rounded-4 = cantos arredondados <br>
+            shadow-lg = sombra grande <br>
+            p-4 = espaçamento interno <br>
+            mb-5 = espaço abaixo da caixa.
+        </div>
+    </div>
+
+    <!-- =====================Container Fluid===================== -->
+
+    <div class="container-fluid bg-danger-subtle border border-danger border-5 rounded-4 shadow-lg p-4 mb-5">
+        <h2 class="text-danger">🚛 .Container-fluid</h2>
+        <p class="fs-4 fw-bold">Ocupa toda a tela!</p>
+        <p>Imagine uma tinta sendo derramada de uma ponta a outra</p>
+        <div class="alert alert-danger">
+            Ocupa sempre 100% da largura. <br>
+            Ideal para banners, menus e rodapés
+        </div>
+    </div>
+
+    <!-- =====================Container Responsivos===================== -->
+
+    <div class="container-sm bg-primary-subtle border border-primary border-5 rounded-4 shadow-4 p-4 mb-5">
+        <h2 class="text-primary">📱 .Container-sm </h2>
+        <p class="fs-4 fw-bold ">SM = Small</p>
+        <p>Breakpoint: 768px</p>
+        <div class="alert alert-primary">
+           Antes de 576px ocupa toda a largura. <br>
+           Depois fica centralizado
+        </div>
+    </div>
+
+    <div class="container-md bg-warning-subtle border border-warning border-5 rounded-4 shadow-4 p-4 mb-5">
+        <h2 class="text-warning">💻 .Container-md </h2>
+        <p class="fs-4 fw-bold ">MD = Medium</p>
+        <p>Breakpoint: 768px</p>
+        <div class="alert alert-warning">
+           Antes de 576px ocupa toda a largura. <br>
+           Depois fica centralizado
+        </div>
+    </div>
+
+    <div class="container-lg bg-secondary-subtle border border-secondary border-5 rounded-4 shadow-4 p-4 mb-5">
+        <h2 class="text-secondary">💻 .Container-lg</h2>
+        <p class="fs-4 fw-bold ">LG = Large</p>
+        <p>Breakpoint: 992px</p>
+        <div class="alert alert-secondary">
+           Muito usado em notebooks
+        </div>
+    </div>
+
+    <div class="container-xl bg-info-secondary-subtle border border-secondary border-5 rounded-4 shadow-4 p-4 mb-5">
+        <h2 class="text-info-secondary">🖥️ .Container-xl </h2>
+        <p class="fs-4 fw-bold ">XL = Extra Large</p>
+        <p>Breakpoint: 1200px</p>
+        <div class="alert alert-secondary">
+           Muito usado em monitores grandes
+        </div>
+    </div>
+
+    <div class="container-xl bg-dark-subtle border border-dark border-5 rounded-4 shadow-4 p-4 mb-5">
+        <h2 class="text-dark">📺 .Container-xxl </h2>
+        <p class="fs-4 fw-bold ">XXL = Extra Extra Large</p>
+        <p>Breakpoint: 1400px</p>
+        <div class="alert alert-dark">
+           Ideal para monitores ultrawide e TVs
+        </div>
+    </div>
+
+
+
+</body>
+</html>
