@@ -1,0 +1,65 @@
+body {
+      background: #f4f5f7;
+    }
+
+    .page-title {
+      letter-spacing: -0.5px;
+    }
+
+    .bento-card {
+      border: 0;
+      box-shadow: 0 .25rem .8rem rgba(0, 0, 0, .10);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .bento-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 .5rem 1.2rem rgba(0, 0, 0, .14);
+    }
+
+    .hero-card {
+      min-height: 166px;
+    }
+
+    .topic-card {
+      min-height: 94px;
+    }
+
+    .small-card {
+      min-height: 135px;
+    }
+
+    .bottom-card {
+      min-height: 90px;
+    }
+
+    .emoji {
+      font-size: 2.2rem;
+      line-height: 1;
+    }
+
+    .stat-number {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .course-list .list-group-item {
+      padding: .35rem .65rem;
+      font-size: .82rem;
+    }
+
+    @media (max-width: 575.98px) {
+      .page-title {
+        font-size: 2rem;
+      }
+
+      .hero-card {
+        min-height: auto;
+      }
+
+      .topic-card,
+      .small-card,
+      .bottom-card {
+        min-height: auto;
+      }
+    }
