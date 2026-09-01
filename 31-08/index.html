@@ -6,11 +6,13 @@
     <title>MTX Mecatrônica — Automação Industrial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
         rel="stylesheet"
     >
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -25,6 +27,7 @@
                             line: '#333B40',
                         }
                     },
+
                     fontFamily: {
                         display: ['Space Grotesk', 'sans-serif'],
                         body: ['IBM Plex Sans', 'sans-serif'],
@@ -37,16 +40,390 @@
 <body class="bg-mec-bg text-mec-text font-body antialiased">
     <header class="sticky top-0 z-50 border-b border-mec-line bg-mec-bg/90 backdrop-blur">
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <a href="#" class="font-display text-2xl font-bold">MTX<span class="text-mec-amber">Mecatrônica</span>
+            <a
+                href="#"
+                class="font-display text-2xl font-bold tracking-tight"
+            >
+                MTX<span class="text-mec-amber">Mecatrônica</span>
             </a>
-            <ul id="menu-desktop" class="hidden items-center gap-8 text-sm font-medium md:flex" >
-                <li><a href="#solucoes" class="transition-colors hover:text-mec-amber">Soluções</a></li>
-                <li><a href="#processo" class="transition-colors hover:text-mec-amber">Processos</a>
+            <ul
+                id="menu-desktop"
+                class="hidden items-center gap-8 text-sm font-medium md:flex"
+            >
+                <li>
+                    <a
+                        href="#solucoes"
+                        class="transition-colors hover:text-mec-amber"
+                    >
+                        Soluções
+                    </a>
                 </li>
-                <li><a href="#cliente" class="transition-colors hover:text-mec-amber">Clientes</a></li>
-                <li><a href="#contato" class="bg-mec-amber text-mec-bg px-4 py-2 rounded-full font-semibold hover:bg-mec-text transition-colors ">Pedir Orçamento</a></li>
+                <li>
+                    <a
+                        href="#processo"
+                        class="transition-colors hover:text-mec-amber"
+                    >
+                        Processos
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#cliente"
+                        class="transition-colors hover:text-mec-amber"
+                    >
+                        Clientes
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#contato"
+                        class="rounded-full bg-mec-amber px-4 py-2 font-semibold text-mec-bg transition-colors hover:bg-mec-text"
+                    >
+                        Pedir Orçamento
+                    </a>
+                </li>
             </ul>
+            <button
+                id="menu-button"
+                type="button"
+                class="rounded-lg border border-mec-line px-3 py-2 text-xl md:hidden"
+                aria-label="Abrir menu"
+            >
+                ☰
+            </button>
         </nav>
+        <div
+            id="menu-mobile"
+            class="hidden border-t border-mec-line px-6 py-5 md:hidden"
+        >
+            <ul class="flex flex-col gap-5 text-sm font-medium">
+                <li>
+                    <a
+                        href="#solucoes"
+                        class="block transition-colors hover:text-mec-amber"
+                    >
+                        Soluções
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#processo"
+                        class="block transition-colors hover:text-mec-amber"
+                    >
+                        Processos
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#cliente"
+                        class="block transition-colors hover:text-mec-amber"
+                    >
+                        Clientes
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#contato"
+                        class="inline-block rounded-full bg-mec-amber px-5 py-3 font-semibold text-mec-bg"
+                    >
+                        Pedir Orçamento
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
+    <main>
+
+        <section
+            class="min-h-[calc(100vh-73px)]"
+        >
+            <div
+                class="mx-auto grid min-h-[calc(100vh-73px)] max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:gap-20 lg:px-10"
+            >
+                <div class="max-w-xl">
+                    <h1
+                        class="font-display text-5xl font-bold leading-[0.98] tracking-tight sm:text-6xl lg:text-[72px]"
+                    >
+                        Mecânica,<br>
+
+                        eletrônica e<br>
+
+                        <span class="text-mec-amber">
+                            software,
+                        </span>
+
+                        numa<br>
+
+                        peça só.
+                    </h1>
+                    <p
+                        class="mt-8 max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl"
+                    >
+                        Projetamos e integramos sistemas automatizados pra
+                        linhas de produção, do sensor ao painel de controle.
+                    </p>
+                    <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                        <a
+                            href="#contato"
+                            class="inline-flex items-center justify-center rounded-full bg-mec-amber px-8 py-4 text-base font-semibold text-mec-bg transition-all duration-300 hover:-translate-y-1 hover:bg-mec-text"
+                        >
+                            Pedir orçamento
+                        </a>
+                        <a
+                            href="#solucoes"
+                            class="inline-flex items-center justify-center rounded-full border border-slate-500 px-8 py-4 text-base font-semibold transition-all duration-300 hover:-translate-y-1 hover:border-mec-amber hover:text-mec-amber"
+                        >
+                            Ver soluções
+                        </a>
+                    </div>
+
+                </div>
+                <div class="flex justify-center lg:justify-end">
+
+                    <div
+                        class="relative flex aspect-square w-full max-w-[660px] items-center justify-center rounded-[58px] border-[30px] border-[#323524] bg-mec-panel p-5 sm:border-[30px]"
+                    >
+                        <div
+                            class="flex h-full w-full items-center justify-center rounded-[46px] border border-[#3B454B] bg-[#242B30]"
+                        >
+                            <div
+                                class="select-none text-[72px] leading-none drop-shadow-[0_0_12px_rgba(232,185,35,0.08)] sm:text-[86px]"
+                                aria-hidden="true"
+                            >
+                                ⚙️
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            id="solucoes"
+            class="border-t border-mec-line bg-[#191E22] px-6 py-24"
+        >
+            <div class="mx-auto max-w-6xl">
+
+                <div class="max-w-2xl">
+                    <span class="font-display text-sm font-semibold uppercase tracking-[0.2em] text-mec-amber">
+                        Soluções
+                    </span>
+
+                    <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                        Tecnologia aplicada à indústria.
+                    </h2>
+
+                    <p class="mt-5 text-lg leading-relaxed text-slate-300">
+                        Desenvolvemos soluções sob medida para automatizar,
+                        monitorar e otimizar processos industriais.
+                    </p>
+                </div>
+                <div class="mt-14 grid gap-6 md:grid-cols-3">
+
+                    <article
+                        class="rounded-2xl border border-mec-line bg-mec-panel p-7 transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <div class="text-3xl">⚙️</div>
+
+                        <h3 class="mt-5 font-display text-xl font-bold">
+                            Mecânica
+                        </h3>
+
+                        <p class="mt-3 leading-relaxed text-slate-400">
+                            Projetos mecânicos pensados para integração,
+                            precisão e eficiência.
+                        </p>
+                    </article>
+                    <article
+                        class="rounded-2xl border border-mec-line bg-mec-panel p-7 transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <div class="text-3xl">⚡</div>
+
+                        <h3 class="mt-5 font-display text-xl font-bold">
+                            Eletrônica
+                        </h3>
+
+                        <p class="mt-3 leading-relaxed text-slate-400">
+                            Sistemas eletrônicos, sensores e painéis para
+                            controle industrial.
+                        </p>
+                    </article>
+                    <article
+                        class="rounded-2xl border border-mec-line bg-mec-panel p-7 transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <div class="text-3xl">💻</div>
+
+                        <h3 class="mt-5 font-display text-xl font-bold">
+                            Software
+                        </h3>
+
+                        <p class="mt-3 leading-relaxed text-slate-400">
+                            Sistemas de supervisão, controle e automação
+                            conectados ao processo.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="processo"
+            class="border-t border-mec-line px-6 py-24"
+        >
+            <div class="mx-auto max-w-6xl">
+                <span class="font-display text-sm font-semibold uppercase tracking-[0.2em] text-mec-amber">
+                    Processo
+                </span>
+                <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                    Do problema à solução.
+                </h2>
+                <div class="mt-14 grid gap-8 md:grid-cols-4">
+                    <div>
+                        <span class="font-display text-5xl font-bold text-mec-amber">
+                            01
+                        </span>
+                        <h3 class="mt-4 font-display text-xl font-bold">
+                            Diagnóstico
+                        </h3>
+                        <p class="mt-2 text-slate-400">
+                            Entendemos o processo e identificamos os gargalos.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="font-display text-5xl font-bold text-mec-amber">
+                            02
+                        </span>
+
+                        <h3 class="mt-4 font-display text-xl font-bold">
+                            Projeto
+                        </h3>
+
+                        <p class="mt-2 text-slate-400">
+                            Criamos a solução mecânica, eletrônica e digital.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="font-display text-5xl font-bold text-mec-amber">
+                            03
+                        </span>
+
+                        <h3 class="mt-4 font-display text-xl font-bold">
+                            Integração
+                        </h3>
+
+                        <p class="mt-2 text-slate-400">
+                            Integramos todos os componentes em um único sistema.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="font-display text-5xl font-bold text-mec-amber">
+                            04
+                        </span>
+
+                        <h3 class="mt-4 font-display text-xl font-bold">
+                            Entrega
+                        </h3>
+
+                        <p class="mt-2 text-slate-400">
+                            Colocamos a solução em operação e acompanhamos os resultados.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="cliente"
+            class="border-t border-mec-line bg-[#191E22] px-6 py-24"
+        >
+            <div class="mx-auto max-w-6xl text-center">
+
+                <span class="font-display text-sm font-semibold uppercase tracking-[0.2em] text-mec-amber">
+                    Clientes
+                </span>
+
+                <h2 class="mx-auto mt-3 max-w-3xl font-display text-4xl font-bold sm:text-5xl">
+                    Soluções que trabalham junto com a sua operação.
+                </h2>
+
+                <p class="mx-auto mt-5 max-w-2xl text-lg text-slate-400">
+                    Projetamos cada projeto pensando nas necessidades
+                    específicas de cada operação.
+                </p>
+
+            </div>
+        </section>
+
+        <section
+            id="contato"
+            class="px-6 py-24"
+        >
+            <div
+                class="mx-auto max-w-5xl rounded-3xl border border-mec-line bg-mec-panel p-8 text-center sm:p-14"
+            >
+
+                <span class="font-display text-sm font-semibold uppercase tracking-[0.2em] text-mec-amber">
+                    Vamos conversar?
+                </span>
+
+                <h2 class="mt-4 font-display text-4xl font-bold sm:text-5xl">
+                    Tem um projeto em mente?
+                </h2>
+
+                <p class="mx-auto mt-5 max-w-xl text-lg text-slate-400">
+                    Conte pra gente o que você precisa automatizar.
+                    Vamos encontrar a melhor solução.
+                </p>
+
+                <a
+                    href="mailto:contato@mtxmecatronica.com.br"
+                    class="mt-8 inline-flex rounded-full bg-mec-amber px-8 py-4 font-semibold text-mec-bg transition-all duration-300 hover:-translate-y-1 hover:bg-mec-text"
+                >
+                    Pedir orçamento
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-mec-line px-6 py-8">
+
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
+
+            <span>
+                © 2026 MTX Mecatrônica.
+            </span>
+
+            <span>
+                Mecânica · Eletrônica · Software
+            </span>
+
+        </div>
+
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menuMobile = document.getElementById('menu-mobile');
+
+        menuButton.addEventListener('click', () => {
+            menuMobile.classList.toggle('hidden');
+        });
+
+
+        // Fecha o menu mobile ao clicar em um link
+        const mobileLinks = menuMobile.querySelectorAll('a');
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuMobile.classList.add('hidden');
+            });
+        });
+    </script>
+
 </body>
 </html>
